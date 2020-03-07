@@ -1,0 +1,1317 @@
+bignum.c:#ifdef HAVE_IEEEFP_H
+bignum.c:#if HAVE_LONG_LONG
+bignum.c:#if HAVE_LONG_LONG
+bignum.c:#endif  /* HAVE_LONG_LONG */
+bignum.c:#if HAVE_LONG_LONG
+bignum.c:#endif  /* HAVE_LONG_LONG */
+cont.c:#ifdef HAVE_ALLOCA
+cont.c:# ifdef HAVE_ALLOCA
+cont.c:# ifdef HAVE_ALLOCA
+dir.c:#ifdef HAVE_UNISTD_H
+dir.c:#if defined HAVE_DIRENT_H && !defined _WIN32
+dir.c:#elif defined HAVE_DIRECT_H && !defined _WIN32
+dir.c:# if HAVE_SYS_NDIR_H
+dir.c:# if HAVE_SYS_DIR_H
+dir.c:# if HAVE_NDIR_H
+dir.c:#ifndef HAVE_STDLIB_H
+dir.c:#ifndef HAVE_STRING_H
+dir.c:#if !defined HAVE_LSTAT && !defined lstat
+dir.c:#if defined HAVE_READDIR_R
+dir.c:#if defined HAVE_READDIR_R
+dir.c:# define IF_HAVE_READDIR_R(something) something
+dir.c:# define IF_HAVE_READDIR_R(something) /* nothing */
+dir.c:    IF_HAVE_READDIR_R(DEFINE_STRUCT_DIRENT entry);
+dir.c:    IF_HAVE_READDIR_R(DEFINE_STRUCT_DIRENT entry);
+dir.c:#ifdef HAVE_TELLDIR
+dir.c:#ifdef HAVE_SEEKDIR
+dir.c:#if defined(HAVE_CHROOT)
+dir.c:	IF_HAVE_READDIR_R(DEFINE_STRUCT_DIRENT entry);
+dln.c:#ifdef HAVE_STDLIB_H
+dln.c:#if defined(HAVE_ALLOCA_H)
+dln.c:#ifdef HAVE_STRING_H
+dln.c:#ifdef HAVE_SYS_PARAM_H
+dln.c:#ifdef HAVE_UNISTD_H
+dln.c:# if defined(HAVE_DLOPEN)
+dln.c:#if defined(HAVE_DLOPEN) && !defined(USE_DLN_A_OUT) && !defined(_AIX) && !defined(MACOSX_DYLD) && !defined(_UNICOSMP)
+dln.h:# ifndef  HAVE_PROTOTYPES
+dln.h:#  define HAVE_PROTOTYPES 1
+dln.h:# ifndef  HAVE_STDARG_PROTOTYPES
+dln.h:#  define HAVE_STDARG_PROTOTYPES 1
+dln.h:#ifdef HAVE_PROTOTYPES
+dln_find.c:#ifdef HAVE_STDLIB_H
+dln_find.c:#if defined(HAVE_ALLOCA_H)
+dln_find.c:#ifdef HAVE_STRING_H
+dln_find.c:#ifdef HAVE_SYS_PARAM_H
+dln_find.c:#ifdef HAVE_UNISTD_H
+encoding.c:#ifdef HAVE_LANGINFO_H
+encoding.c:#elif defined HAVE_LANGINFO_H
+error.c:#ifdef HAVE_STDLIB_H
+eval_intern.h:#ifdef HAVE_STDLIB_H
+eval_intern.h:# ifdef HAVE_ALLOCA_H
+eval_intern.h:# endif	/* HAVE_ALLOCA_H */
+eval_intern.h:#ifndef HAVE_STRING_H
+eval_intern.h:#ifdef HAVE_UNISTD_H
+eval_intern.h:#ifdef HAVE_NET_SOCKET_H
+eval_intern.h:#ifdef HAVE_SYS_SELECT_H
+eval_intern.h:#ifdef HAVE_SELECT_LARGE_FDSET
+eval_intern.h:#ifdef HAVE_SYS_PARAM_H
+file.c:#ifdef HAVE_UNISTD_H
+file.c:#ifdef HAVE_SYS_FILE_H
+file.c:#ifdef HAVE_SYS_PARAM_H
+file.c:#ifdef HAVE_UTIME_H
+file.c:#elif defined HAVE_SYS_UTIME_H
+file.c:#ifdef HAVE_PWD_H
+file.c:#ifdef HAVE_SYS_MKDEV_H
+file.c:#if defined(HAVE_FCNTL_H)
+file.c:#if !defined HAVE_LSTAT && !defined lstat
+file.c:#ifdef HAVE_ST_RDEV
+file.c:#if defined(HAVE_ST_RDEV) && defined(major)
+file.c:#if defined(HAVE_ST_RDEV) && defined(minor)
+file.c:#ifdef HAVE_ST_BLKSIZE
+file.c:#ifdef HAVE_STRUCT_STAT_ST_BLOCKS
+file.c:#if defined(HAVE_STRUCT_STAT_ST_ATIM)
+file.c:#elif defined(HAVE_STRUCT_STAT_ST_ATIMESPEC)
+file.c:#elif defined(HAVE_STRUCT_STAT_ST_ATIMENSEC)
+file.c:#if defined(HAVE_STRUCT_STAT_ST_MTIM)
+file.c:#elif defined(HAVE_STRUCT_STAT_ST_MTIMESPEC)
+file.c:#elif defined(HAVE_STRUCT_STAT_ST_MTIMENSEC)
+file.c:#if defined(HAVE_STRUCT_STAT_ST_CTIM)
+file.c:#elif defined(HAVE_STRUCT_STAT_ST_CTIMESPEC)
+file.c:#elif defined(HAVE_STRUCT_STAT_ST_CTIMENSEC)
+file.c:#ifdef HAVE_LSTAT
+file.c:#ifdef HAVE_LSTAT
+file.c:# ifdef HAVE_GETGROUPS
+file.c:#ifndef HAVE_EACCESS
+file.c:#ifndef HAVE_FCHMOD
+file.c:#ifdef HAVE_FCHMOD
+file.c:#if defined(HAVE_LCHMOD)
+file.c:#ifndef HAVE_FCHOWN
+file.c:#ifndef HAVE_FCHOWN
+file.c:#if defined(HAVE_LCHOWN)
+file.c:#if defined(HAVE_UTIMES)
+file.c:#ifdef HAVE_UTIMENSAT
+file.c:#if !defined HAVE_UTIME_H && !defined HAVE_SYS_UTIME_H
+file.c:#ifdef HAVE_LINK
+file.c:#ifdef HAVE_SYMLINK
+file.c:#ifdef HAVE_READLINK
+file.c:#ifdef HAVE_PWD_H
+file.c:#ifdef HAVE_READLINK
+file.c:#if defined(HAVE_TRUNCATE) || defined(HAVE_CHSIZE)
+file.c:#ifdef HAVE_TRUNCATE
+file.c:#else /* defined(HAVE_CHSIZE) */
+file.c:#if defined(HAVE_FTRUNCATE) || defined(HAVE_CHSIZE)
+file.c:#ifdef HAVE_FTRUNCATE
+file.c:#else /* defined(HAVE_CHSIZE) */
+gc.c:#ifdef HAVE_SYS_TIME_H
+gc.c:#ifdef HAVE_SYS_RESOURCE_H
+gc.c:#ifdef HAVE_VALGRIND_MEMCHECK_H
+gc.c:# ifdef HAVE_ALLOCA_H
+gc.c:# endif /* HAVE_ALLOCA_H */
+gc.c:#if defined(POSIX_SIGNAL) && defined(SIGSEGV) && defined(HAVE_SIGALTSTACK)
+gc.c:        rb_hash_aset(prof, ID2SYM(rb_intern("HAVE_FINALIZE")), objspace->profile.record[i].have_finalize);
+gc.c:			rb_hash_aref(r, ID2SYM(rb_intern("HAVE_FINALIZE")))? "true" : "false",
+hash.c:#if defined(_WIN32) || (defined(HAVE_SETENV) && defined(HAVE_UNSETENV))
+hash.c:#elif defined(HAVE_SETENV) && defined(HAVE_UNSETENV)
+io.c:#if defined HAVE_NET_SOCKET_H
+io.c:#elif defined HAVE_SYS_SOCKET_H
+io.c:#if defined(HAVE_SYS_IOCTL_H) && !defined(_WIN32)
+io.c:#if defined(HAVE_FCNTL_H) || defined(_WIN32)
+io.c:#elif defined(HAVE_SYS_FCNTL_H)
+io.c:#if !HAVE_OFF_T && !defined(off_t)
+io.c:#if defined(HAVE_SYS_PARAM_H) && !(defined(__EMX__) || defined(__HIUX_MPP__))
+io.c:#ifdef HAVE_UNISTD_H
+io.c:#ifdef HAVE_SYSCALL_H
+io.c:#elif defined HAVE_SYS_SYSCALL_H
+io.c:#if SIZEOF_OFF_T > SIZEOF_LONG && !defined(HAVE_LONG_LONG)
+io.c:#if !defined HAVE_SHUTDOWN && !defined shutdown
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFL) && defined(O_NONBLOCK)
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFL) && defined(O_NONBLOCK)
+io.c:#ifdef HAVE_RB_FD_INIT
+io.c:#ifdef HAVE_RB_FD_INIT
+io.c:#ifdef HAVE_RB_FD_INIT
+io.c:#ifdef HAVE_RB_FD_INIT
+io.c:#ifdef HAVE_FSYNC
+io.c:#ifdef HAVE_FDATASYNC
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFD) && defined(F_SETFD) && defined(FD_CLOEXEC)
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFD) && defined(F_SETFD) && defined(FD_CLOEXEC)
+io.c:#if defined(__CYGWIN__) || !defined(HAVE_FORK)
+io.c:#if !defined(HAVE_FORK) && !defined(_WIN32)
+io.c:#ifdef HAVE_FORK
+io.c:#if defined(HAVE_FORK)
+io.c:#if !defined(HAVE_FORK)
+io.c:#if defined(HAVE_FORK)
+io.c:#if defined (__CYGWIN__) || !defined(HAVE_FORK)
+io.c:#if !defined(HAVE_FORK)
+io.c:#if defined (__CYGWIN__) || !defined(HAVE_FORK)
+io.c:#if defined (__CYGWIN__) || !defined(HAVE_FORK)
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFL)
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFL)
+io.c:#if defined(HAVE_FCNTL) && defined(F_GETFL)
+io.c:#ifdef HAVE_FCHMOD
+io.c:#ifdef HAVE_FCHOWN
+io.c:#ifdef HAVE_SYS_SELECT_H
+io.c:#ifdef HAVE_RB_FD_INIT
+io.c:#ifdef HAVE_RB_FD_INIT
+io.c:#ifdef HAVE_FCNTL
+io.c:#ifdef HAVE_FCNTL
+io.c:#if defined(HAVE_SYSCALL) || defined(HAVE___SYSCALL)
+io.c:#if SIZEOF_VOIDP == 8 && defined(HAVE___SYSCALL) && SIZEOF_INT != 8 /* mainly *BSD */
+io.c:#ifdef HAVE_SENDFILE
+io.c:#ifdef HAVE_SYS_SENDFILE_H
+io.c:#ifdef HAVE_PREAD
+main.c:#ifdef HAVE_LOCALE_H
+main.c:#ifdef HAVE_LOCALE_H
+marshal.c:#ifdef HAVE_FLOAT_H
+marshal.c:#ifdef HAVE_IEEEFP_H
+math.c:#ifndef HAVE_COSH
+math.c:#ifndef HAVE_SINH
+math.c:#ifndef HAVE_TANH
+math.c:#ifndef HAVE_LOG2
+numeric.c:#ifdef HAVE_FLOAT_H
+numeric.c:#ifdef HAVE_IEEEFP_H
+numeric.c:#ifdef HAVE_INFINITY
+numeric.c:#ifdef HAVE_NAN
+numeric.c:#ifndef HAVE_ROUND
+numeric.c:#ifdef HAVE_FMOD
+numeric.c:#if HAVE_FINITE
+numeric.c:#if HAVE_LONG_LONG
+numeric.c:#endif  /* HAVE_LONG_LONG */
+pack.c:#elif defined(HAVE_LONG_LONG) && SIZEOF_LONG_LONG == 8
+pack.c:# ifdef HAVE_INT64_T
+pack.c:#ifdef HAVE_LONG_LONG
+pack.c:# ifdef HAVE_UINT32_T
+pack.c:# ifdef HAVE_UINT64_T	/* SIZEOF_DOUBLE == 8 == SIZEOF_UINT64_T */
+pack.c:#if defined(HAVE_INT16_T) && !defined(FORCE_BIG_PACK)
+pack.c:#if defined(HAVE_INT32_T) && !defined(FORCE_BIG_PACK)
+pack.c:#if defined(HAVE_INT64_T) && SIZEOF_LONG == SIZEOF_INT64_T && !defined(FORCE_BIG_PACK)
+pack.c:#if defined(HAVE_INT16_T) && !defined(FORCE_BIG_PACK)
+pack.c:#if defined(HAVE_INT32_T) && !defined(FORCE_BIG_PACK)
+pack.c:#if defined(HAVE_INT64_T) && !defined(FORCE_BIG_PACK)
+process.c:#ifdef HAVE_STDLIB_H
+process.c:#ifdef HAVE_UNISTD_H
+process.c:#ifdef HAVE_FCNTL_H
+process.c:#ifdef HAVE_SYS_WAIT_H
+process.c:#ifdef HAVE_SYS_RESOURCE_H
+process.c:#ifdef HAVE_SYS_PARAM_H
+process.c:#undef HAVE_GETPGRP
+process.c:#ifdef HAVE_SYS_TIMES_H
+process.c:#ifdef HAVE_GRP_H
+process.c:#if defined(HAVE_TIMES) || defined(_WIN32)
+process.c:#define HAVE_44BSD_SETUID 1
+process.c:#define HAVE_44BSD_SETGID 1
+process.c:#undef HAVE_SETRUID
+process.c:#undef HAVE_SETRGID
+process.c:#if defined(HAVE_44BSD_SETUID) || defined(__MacOS_X__)
+process.c:#if !defined(HAVE_WAITPID) && !defined(HAVE_WAIT4)
+process.c:#elif defined HAVE_WAITPID
+process.c:#else  /* HAVE_WAIT4 */
+process.c:#ifndef HAVE_STRING_H
+process.c:#define HAVE_SPAWNV 1
+process.c:#if !defined(HAVE_FORK) && defined(HAVE_SPAWNV)
+process.c:#ifdef HAVE_SETPGID
+process.c:#ifdef HAVE_SETPGID
+process.c:#ifdef HAVE_SETPGID
+process.c:#ifdef HAVE_FORK
+process.c:#if !defined FD_CLOEXEC && !defined HAVE_SPAWNV
+process.c:#ifdef HAVE_FORK
+process.c:#ifdef HAVE_FORK
+process.c:#if defined(HAVE_FORK) && !defined(CANNOT_FORK_WITH_PTHREAD)
+process.c:#if defined HAVE_FORK || !defined HAVE_SPAWNV
+process.c:#if !defined HAVE_FORK
+process.c:#if defined HAVE_FORK
+process.c:# if defined HAVE_SPAWNV
+process.c:#if defined(HAVE_FORK) || defined(HAVE_SPAWNV)
+process.c:#if defined(HAVE_FORK) || defined(HAVE_SPAWNV)
+process.c:#if (defined(HAVE_GETPGRP) && defined(GETPGRP_VOID)) || defined(HAVE_GETPGID)
+process.c:#if defined(HAVE_GETPGRP) && defined(GETPGRP_VOID)
+process.c:#else /* defined(HAVE_GETPGID) */
+process.c:#if defined(HAVE_SETPGID) || (defined(HAVE_SETPGRP) && defined(SETPGRP_VOID))
+process.c:#ifdef HAVE_SETPGID
+process.c:#elif defined(HAVE_SETPGRP) && defined(SETPGRP_VOID)
+process.c:#if defined(HAVE_GETPGID)
+process.c:#ifdef HAVE_SETPGID
+process.c:#if defined(HAVE_SETSID) || (defined(HAVE_SETPGRP) && defined(TIOCNOTTY))
+process.c:#if !defined(HAVE_SETSID)
+process.c:#if !defined(HAVE_SETSID)
+process.c:#define HAVE_SETSID 1
+process.c:#ifdef HAVE_GETPRIORITY
+process.c:#ifdef HAVE_GETPRIORITY
+process.c:#if defined(HAVE_GETRLIMIT) && defined(RLIM2NUM)
+process.c:#if defined(HAVE_SETRLIMIT) && defined(NUM2RLIM)
+process.c:#if defined HAVE_SETUID
+process.c:#if defined HAVE_SETRUID
+process.c:#if defined HAVE_SETEUID
+process.c:#if defined HAVE_SETREUID
+process.c:#if defined HAVE_SETRESUID
+process.c:#if defined(HAVE_SETRESUID) || defined(HAVE_SETREUID) || defined(HAVE_SETRUID) || defined(HAVE_SETUID)
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined HAVE_SETREUID
+process.c:#elif defined HAVE_SETRUID
+process.c:#elif defined HAVE_SETUID
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined(HAVE_SETUID)
+process.c:#elif defined(HAVE_SETREUID) && !defined(OBSOLETE_SETREUID)
+process.c:#elif defined(HAVE_SETRUID) && defined(HAVE_SETEUID)
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined(HAVE_SETREUID) && !defined(OBSOLETE_SETREUID)
+process.c:#elif defined(HAVE_SETRUID) && defined(HAVE_SETEUID)
+process.c:#elif defined HAVE_44BSD_SETUID
+process.c:#elif defined HAVE_SETEUID
+process.c:#elif defined HAVE_SETUID
+process.c:#if defined HAVE_SETGID
+process.c:#if defined HAVE_SETRGID
+process.c:#if defined HAVE_SETEGID
+process.c:#if defined HAVE_SETREGID
+process.c:#if defined HAVE_SETRESGID
+process.c:#if defined HAVE_ISSETUGID
+process.c:#if defined(HAVE_SETRESGID) || defined(HAVE_SETREGID) || defined(HAVE_SETRGID) || defined(HAVE_SETGID)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined HAVE_SETREGID
+process.c:#elif defined HAVE_SETRGID
+process.c:#elif defined HAVE_SETGID
+process.c:#ifdef HAVE_GETGROUPS
+process.c:#ifdef HAVE_SETGROUPS
+process.c:#ifdef HAVE_INITGROUPS
+process.c:#if defined(HAVE_DAEMON) || (defined(HAVE_FORK) && defined(HAVE_SETSID))
+process.c:#if defined(HAVE_DAEMON)
+process.c:#elif defined(HAVE_FORK)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined HAVE_SETGID
+process.c:#elif defined(HAVE_SETREGID) && !defined(OBSOLETE_SETREGID)
+process.c:#elif defined(HAVE_SETRGID) && defined (HAVE_SETEGID)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined(HAVE_SETREGID) && !defined(OBSOLETE_SETREGID)
+process.c:#elif defined(HAVE_SETRGID) && defined(HAVE_SETEGID)
+process.c:#elif defined HAVE_44BSD_SETGID
+process.c:#elif defined HAVE_SETEGID
+process.c:#elif defined HAVE_SETGID
+process.c:#if defined(HAVE_SETRESUID) || defined(HAVE_SETREUID) || defined(HAVE_SETEUID) || defined(HAVE_SETUID) || defined(_POSIX_SAVED_IDS)
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined HAVE_SETREUID
+process.c:#elif defined HAVE_SETEUID
+process.c:#elif defined HAVE_SETUID
+process.c:#if defined(HAVE_SETRESUID) || defined(HAVE_SETREUID) || defined(HAVE_SETEUID) || defined(HAVE_SETUID)
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined(HAVE_SETREUID) && !defined(OBSOLETE_SETREUID)
+process.c:#elif defined HAVE_SETEUID
+process.c:#elif defined HAVE_SETUID
+process.c:#if defined(HAVE_SETRESGID) || defined(HAVE_SETREGID) || defined(HAVE_SETEGID) || defined(HAVE_SETGID) || defined(_POSIX_SAVED_IDS)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined HAVE_SETREGID
+process.c:#elif defined HAVE_SETEGID
+process.c:#elif defined HAVE_SETGID
+process.c:#if defined(HAVE_SETRESGID) || defined(HAVE_SETREGID) || defined(HAVE_SETEGID) || defined(HAVE_SETGID)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined(HAVE_SETREGID) && !defined(OBSOLETE_SETREGID)
+process.c:#elif defined HAVE_SETEGID
+process.c:#elif defined HAVE_SETGID
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined(HAVE_SETREUID) && !defined(OBSOLETE_SETREUID)
+process.c:#if defined(HAVE_SETRESUID)
+process.c:#elif defined(HAVE_SETREUID) && !defined(OBSOLETE_SETREUID)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined(HAVE_SETREGID) && !defined(OBSOLETE_SETREGID)
+process.c:#if defined(HAVE_SETRESGID)
+process.c:#elif defined(HAVE_SETREGID) && !defined(OBSOLETE_SETREGID)
+process.c:#if defined(HAVE_SETRESUID) || defined(HAVE_SETEUID) || defined(_POSIX_SAVED_IDS)
+process.c:#if defined(HAVE_SETRESUID) || defined(HAVE_SETEUID) || defined(_POSIX_SAVED_IDS)
+process.c:#if defined(HAVE_SETRESGID) || defined(HAVE_SETEGID) || defined(_POSIX_SAVED_IDS)
+process.c:#if defined(HAVE_SETRESGID) || defined(HAVE_SETEGID) || defined(_POSIX_SAVED_IDS)
+process.c:#if defined(HAVE_TIMES)
+process.c:#ifdef HAVE__SC_CLK_TCK
+process.c:#ifdef HAVE_GETPRIORITY
+process.c:#if defined(HAVE_TIMES) || defined(_WIN32)
+random.c:#ifdef HAVE_UNISTD_H
+random.c:#ifdef HAVE_FCNTL_H
+rational.c:#ifdef HAVE_IEEEFP_H
+regerror.c:#ifdef HAVE_STDARG_PROTOTYPES
+regerror.c:#ifdef HAVE_STDARG_PROTOTYPES
+regerror.c:#ifdef HAVE_STDARG_PROTOTYPES
+regexec.c:#ifdef HAVE_SYS_TIME_H
+regexec.c:#ifdef HAVE_UNISTD_H
+regexec.c:#ifdef HAVE_SYS_TIMES_H
+regint.h:#ifdef HAVE_STDLIB_H
+regint.h:#if defined(HAVE_ALLOCA_H) && (defined(_AIX) || !defined(__GNUC__))
+regint.h:#ifdef HAVE_STRING_H
+regint.h:#ifdef HAVE_SYS_TYPES_H
+ruby.c:#if defined(LOAD_RELATIVE) && defined(HAVE_DLADDR)
+ruby.c:#ifdef HAVE_UNISTD_H
+ruby.c:#if defined(HAVE_FCNTL_H)
+ruby.c:#elif defined(HAVE_SYS_FCNTL_H)
+ruby.c:#ifdef HAVE_SYS_PARAM_H
+ruby.c:#ifndef HAVE_STDLIB_H
+ruby.c:#if !defined(PSTAT_SETCMD) && !defined(HAVE_SETPROCTITLE)
+ruby.c:# if defined HAVE_DLADDR || (defined __CYGWIN__ && defined CCP_WIN_A_TO_POSIX)
+ruby.c:#elif defined(HAVE_DLADDR)
+ruby.c:#if !defined(PSTAT_SETCMD) && !defined(HAVE_SETPROCTITLE)
+ruby.c:# if defined(HAVE_SETENV) && defined(HAVE_UNSETENV)
+ruby.c:#elif defined(HAVE_SETPROCTITLE)
+ruby.c:#if !defined(PSTAT_SETCMD) && !defined(HAVE_SETPROCTITLE)
+signal.c:#if defined HAVE_SIGPROCMASK || defined HAVE_SIGSETMASK
+signal.c:#if 0 /* def HAVE_NATIVETHREAD */
+signal.c:# ifdef HAVE_SIGPROCMASK
+signal.c:#if HAVE_PTHREAD_H
+signal.c:# ifdef HAVE_SIGPROCMASK
+signal.c:#ifdef HAVE_SIGPROCMASK
+signal.c:# ifdef HAVE_SIGPROCMASK
+sprintf.c:#ifdef HAVE_IEEEFP_H
+sprintf.c:#  define _HAVE_SANE_QUAD_
+sprintf.c:#  define _HAVE_LLP64_
+st.c:#ifdef HAVE_STDLIB_H
+st.c:#ifdef HAVE_UNISTD_H
+strftime.c:#if HAVE_SYS_TIME_H
+strftime.c:#if !defined(OS2) && defined(HAVE_TZNAME)
+strftime.c:#ifdef HAVE_DAYLIGHT
+strftime.c:#ifdef HAVE_VAR_TIMEZONE
+strftime.c:#ifdef HAVE_VAR_ALTZONE
+strftime.c:#ifndef HAVE_TM_ZONE
+strftime.c:#ifndef HAVE_TM_NAME
+strftime.c:#if ((defined(MAILHEADER_EXT) && !HAVE_VAR_TIMEZONE && HAVE_GETTIMEOFDAY) || \
+strftime.c:     (!HAVE_TZNAME && HAVE_TIMEZONE))
+strftime.c:#endif /* HAVE_TM_NAME */
+strftime.c:#endif /* HAVE_TM_ZONE */
+strftime.c:#ifdef HAVE_TM_NAME
+strftime.c:#else /* !HAVE_TM_NAME */
+strftime.c:#ifdef HAVE_TM_ZONE
+strftime.c:#else /* !HAVE_TM_ZONE */
+strftime.c:#if HAVE_VAR_TIMEZONE
+strftime.c:#if HAVE_VAR_ALTZONE
+strftime.c:#else /* !HAVE_VAR_TIMEZONE */
+strftime.c:#ifdef HAVE_GETTIMEOFDAY
+strftime.c:#endif /* !HAVE_VAR_TIMEZONE */
+strftime.c:#endif /* !HAVE_TM_ZONE */
+strftime.c:#endif /* !HAVE_TM_NAME */
+strftime.c:#ifdef HAVE_TZNAME
+strftime.c:#ifdef HAVE_TM_ZONE
+strftime.c:#ifdef HAVE_TM_NAME
+strftime.c:#ifdef HAVE_TIMEZONE
+strftime.c:#endif /* HAVE_TIMEZONE */
+strftime.c:#endif /* HAVE_TM_NAME */
+strftime.c:#endif /* HAVE_TM_ZONE */
+strftime.c:#endif /* HAVE_TZNAME */
+strftime.c:#if defined(HAVE_STRUCT_TM_TM_GMTOFF)
+strftime.c:#if defined(HAVE_TM_ZONE)
+string.c:#ifdef HAVE_UNISTD_H
+thread.c:#ifdef HAVE_VA_ARGS_MACRO
+thread.c:#elif defined(HAVE_PTHREAD_H)
+thread.c:#ifdef HAVE_VA_ARGS_MACRO
+thread.c:#if defined(HAVE_CLOCK_GETTIME) && defined(CLOCK_MONOTONIC)
+thread.c:#if defined(HAVE_CLOCK_GETTIME) && defined(CLOCK_MONOTONIC)
+thread.c:#if defined(POSIX_SIGNAL) && defined(SIGSEGV) && defined(HAVE_SIGALTSTACK)
+thread.c:#if defined(NFDBITS) && defined(HAVE_RB_FD_INIT)
+thread_pthread.c:#ifdef HAVE_SYS_RESOURCE_H
+thread_pthread.c:#ifdef HAVE_SCHED_YIELD
+thread_pthread.c:#if defined HAVE_PTHREAD_GETATTR_NP || defined HAVE_PTHREAD_ATTR_GET_NP
+thread_pthread.c:#elif defined HAVE_PTHREAD_GET_STACKADDR_NP && defined HAVE_PTHREAD_GET_STACKSIZE_NP
+thread_pthread.c:#elif defined HAVE_THR_STKSEGMENT || defined HAVE_PTHREAD_STACKSEG_NP
+thread_pthread.c:#elif defined HAVE_PTHREAD_GETTHRDS_NP
+thread_pthread.c:#if defined HAVE_PTHREAD_GETATTR_NP || defined HAVE_PTHREAD_ATTR_GET_NP
+thread_pthread.c:# ifdef HAVE_PTHREAD_GETATTR_NP
+thread_pthread.c:#   ifdef HAVE_PTHREAD_ATTR_GETSTACK
+thread_pthread.c:#elif defined HAVE_PTHREAD_GET_STACKADDR_NP && defined HAVE_PTHREAD_GET_STACKSIZE_NP
+thread_pthread.c:#elif defined HAVE_THR_STKSEGMENT || defined HAVE_PTHREAD_STACKSEG_NP
+thread_pthread.c:# if defined HAVE_THR_STKSEGMENT
+thread_pthread.c:#elif defined HAVE_PTHREAD_GETTHRDS_NP
+thread_pthread.c:#if defined(HAVE_PTHREAD_ATTR_GET_NP)
+thread_pthread.c:#elif defined(HAVE_GETRLIMIT)
+thread_pthread.c:#ifdef HAVE_PTHREAD_ATTR_SETINHERITSCHED
+thread_pthread.c:#ifdef HAVE_SIGALTSTACK
+thread_pthread.h:#ifdef HAVE_PTHREAD_NP_H
+thread_win32.c:#define HAVE__BEGINTHREADEX 1
+thread_win32.c:#undef HAVE__BEGINTHREADEX
+thread_win32.c:#ifdef HAVE__BEGINTHREADEX
+time.c:#ifdef HAVE_UNISTD_H
+time.c:#if !(HAVE_LONG_LONG && SIZEOF_LONG * 2 <= SIZEOF_LONG_LONG)
+time.c:#if HAVE_LONG_LONG && SIZEOF_LONG * 2 <= SIZEOF_LONG_LONG
+time.c:#elif defined(HAVE_LONG_LONG) && SIZEOF_LONG_LONG == 8
+time.c:#if defined(HAVE_UINT64_T) && SIZEOF_LONG*2 <= SIZEOF_UINT64_T
+time.c:#ifdef HAVE_GMTIME_R
+time.c:#if defined(HAVE_MKTIME) && defined(LOCALTIME_OVERFLOW_PROBLEM)
+time.c:#  if defined(HAVE_STRUCT_TM_TM_GMTOFF)
+time.c:#  if defined(HAVE_STRUCT_TM_TM_GMTOFF)
+time.c:#if !defined(HAVE_STRUCT_TM_TM_GMTOFF)
+time.c:#if defined(HAVE_TIMEGM) && defined(LOCALTIME_OVERFLOW_PROBLEM)
+time.c:#if defined(HAVE_STRUCT_TM_TM_GMTOFF)
+time.c:#if defined(HAVE_TM_ZONE)
+time.c:#if defined(HAVE_STRUCT_TM_TM_GMTOFF)
+time.c:#if defined(HAVE_TM_ZONE)
+time.c:#elif defined(HAVE_TZNAME) && defined(HAVE_DAYLIGHT)
+time.c:#ifdef HAVE_CLOCK_GETTIME
+time.c:#if defined(HAVE_MKTIME)
+util.c:#ifdef HAVE_UNISTD_H
+util.c:#if defined(HAVE_FCNTL_H)
+util.c:#ifdef HAVE_GETCWD
+util.c:#if HAVE_LONG_LONG
+vm.c:#if HAVE_BACKTRACE
+vm_core.h:#elif defined(HAVE_PTHREAD_H)
+vm_core.h:#ifdef HAVE_STDARG_PROTOTYPES
+vm_core.h:#if defined(SIGSEGV) && defined(HAVE_SIGALTSTACK) && defined(SA_SIGINFO) && !defined(__NetBSD__)
+vm_dump.c:#if HAVE_BACKTRACE
+vm_dump.c:#if HAVE_BACKTRACE
+vsnprintf.c:#if !defined(HAVE_STDARG_PROTOTYPES)
+vsnprintf.c:#define HAVE_STDARG_PROTOTYPES 1
+vsnprintf.c:#if defined(HAVE_STDARG_PROTOTYPES)
+vsnprintf.c:#  ifdef HAVE_LIMITS_H
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#else /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_LLP64_
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#else /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#else /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#ifdef _HAVE_SANE_QUAD_
+vsnprintf.c:#else /* _HAVE_SANE_QUAD_ */
+vsnprintf.c:#endif /* _HAVE_SANE_QUAD_ */
+missing/acosh.c:#ifndef HAVE_ACOSH
+missing/acosh.c:#ifndef HAVE_ASINH
+missing/acosh.c:#ifndef HAVE_ATANH
+missing/crypt.c:#ifdef HAVE_UNISTD_H
+missing/crypt.c:#ifdef HAVE_PWD_H
+missing/dup2.c:#if defined(HAVE_FCNTL)
+missing/dup2.c:#if !defined(HAVE_FCNTL) || !defined(F_DUPFD)
+missing/dup2.c:#if defined(HAVE_FCNTL) && defined(F_DUPFD)
+missing/flock.c:#elif defined HAVE_FCNTL && defined HAVE_FCNTL_H
+missing/flock.c:#elif defined(HAVE_LOCKF)
+missing/isinf.c:#if defined(HAVE_FINITE) && defined(HAVE_ISNAN)
+missing/isinf.c:#ifdef HAVE_IEEEFP_H
+missing/isinf.c:#ifdef HAVE_STRING_H
+missing/langinfo.c:#ifdef HAVE_LANGINFO_H
+missing/langinfo.c:#ifdef HAVE_LANGINFO_H
+missing/tgamma.c:#ifdef HAVE_LGAMMA_R
+ruby/config.h:#define HAVE_SYS_TYPES_H 1
+ruby/config.h:#define HAVE_SYS_STAT_H 1
+ruby/config.h:#define HAVE_STDLIB_H 1
+ruby/config.h:#define HAVE_STRING_H 1
+ruby/config.h:#define HAVE_MEMORY_H 1
+ruby/config.h:#define HAVE_STRINGS_H 1
+ruby/config.h:#define HAVE_INTTYPES_H 1
+ruby/config.h:#define HAVE_STDINT_H 1
+ruby/config.h:#define HAVE_UNISTD_H 1
+ruby/config.h:#define HAVE_LONG_LONG 1
+ruby/config.h:#define HAVE_OFF_T 1
+ruby/config.h:#define HAVE_PROTOTYPES 1
+ruby/config.h:#define HAVE_STDARG_PROTOTYPES 1
+ruby/config.h:#define HAVE_VA_ARGS_MACRO 1
+ruby/config.h:#define HAVE_DECL_SYS_NERR 0
+ruby/config.h:#define HAVE_LIBCRYPT 1
+ruby/config.h:#define HAVE_LIBDL 1
+ruby/config.h:#define HAVE_LIBRT 1
+ruby/config.h:#define HAVE_DIRENT_H 1
+ruby/config.h:#define HAVE__BOOL 1
+ruby/config.h:#define HAVE_STDBOOL_H 1
+ruby/config.h:#define HAVE_SYS_WAIT_H 1
+ruby/config.h:#define HAVE_LIMITS_H 1
+ruby/config.h:#define HAVE_SYS_FILE_H 1
+ruby/config.h:#define HAVE_SYS_IOCTL_H 1
+ruby/config.h:#define HAVE_SYS_SYSCALL_H 1
+ruby/config.h:#define HAVE_FCNTL_H 1
+ruby/config.h:#define HAVE_SYS_FCNTL_H 1
+ruby/config.h:#define HAVE_SYS_SELECT_H 1
+ruby/config.h:#define HAVE_SYS_TIME_H 1
+ruby/config.h:#define HAVE_SYS_TIMES_H 1
+ruby/config.h:#define HAVE_SYS_PARAM_H 1
+ruby/config.h:#define HAVE_SYSCALL_H 1
+ruby/config.h:#define HAVE_PWD_H 1
+ruby/config.h:#define HAVE_GRP_H 1
+ruby/config.h:#define HAVE_UTIME_H 1
+ruby/config.h:#define HAVE_SYS_RESOURCE_H 1
+ruby/config.h:#define HAVE_NETINET_IN_SYSTM_H 1
+ruby/config.h:#define HAVE_FLOAT_H 1
+ruby/config.h:#define HAVE_UCONTEXT_H 1
+ruby/config.h:#define HAVE_LANGINFO_H 1
+ruby/config.h:#define HAVE_LOCALE_H 1
+ruby/config.h:#define HAVE_SYS_SENDFILE_H 1
+ruby/config.h:#define HAVE_TIME_H 1
+ruby/config.h:#define HAVE_SYS_SOCKET_H 1
+ruby/config.h:#define HAVE_STRUCT_STAT_ST_BLKSIZE 1
+ruby/config.h:#define HAVE_ST_BLKSIZE 1
+ruby/config.h:#define HAVE_STRUCT_STAT_ST_BLOCKS 1
+ruby/config.h:#define HAVE_ST_BLOCKS 1
+ruby/config.h:#define HAVE_STRUCT_STAT_ST_RDEV 1
+ruby/config.h:#define HAVE_ST_RDEV 1
+ruby/config.h:#define HAVE_STRUCT_STAT_ST_ATIM 1
+ruby/config.h:#define HAVE_STRUCT_STAT_ST_MTIM 1
+ruby/config.h:#define HAVE_STRUCT_STAT_ST_CTIM 1
+ruby/config.h:#define HAVE_STRUCT_TIMESPEC 1
+ruby/config.h:#define HAVE_STRUCT_TIMEZONE 1
+ruby/config.h:#define HAVE_RB_FD_INIT 1
+ruby/config.h:#define HAVE_INT8_T 1
+ruby/config.h:#define HAVE_UINT8_T 1
+ruby/config.h:#define HAVE_INT16_T 1
+ruby/config.h:#define HAVE_UINT16_T 1
+ruby/config.h:#define HAVE_INT32_T 1
+ruby/config.h:#define HAVE_UINT32_T 1
+ruby/config.h:#define HAVE_INT64_T 1
+ruby/config.h:#define HAVE_UINT64_T 1
+ruby/config.h:#define HAVE_INTPTR_T 1
+ruby/config.h:#define HAVE_UINTPTR_T 1
+ruby/config.h:#define HAVE_SSIZE_T 1
+ruby/config.h:#define HAVE_ALLOCA_H 1
+ruby/config.h:#define HAVE_ALLOCA 1
+ruby/config.h:#define HAVE_DUP2 1
+ruby/config.h:#define HAVE_MEMMOVE 1
+ruby/config.h:#define HAVE_STRERROR 1
+ruby/config.h:#define HAVE_STRCHR 1
+ruby/config.h:#define HAVE_STRSTR 1
+ruby/config.h:#define HAVE_CRYPT 1
+ruby/config.h:#define HAVE_FLOCK 1
+ruby/config.h:#define HAVE_FINITE 1
+ruby/config.h:#define HAVE_HYPOT 1
+ruby/config.h:#define HAVE_ACOSH 1
+ruby/config.h:#define HAVE_ERF 1
+ruby/config.h:#define HAVE_TGAMMA 1
+ruby/config.h:#define HAVE_LGAMMA_R 1
+ruby/config.h:#define HAVE_CBRT 1
+ruby/config.h:#define HAVE_STRLCPY 1
+ruby/config.h:#define HAVE_STRLCAT 1
+ruby/config.h:#define HAVE_SIGNBIT 1
+ruby/config.h:#define HAVE_FMOD 1
+ruby/config.h:#define HAVE_KILLPG 1
+ruby/config.h:#define HAVE_WAIT4 1
+ruby/config.h:#define HAVE_WAITPID 1
+ruby/config.h:#define HAVE_FORK 1
+ruby/config.h:#define HAVE_SYSCALL 1
+ruby/config.h:#define HAVE_CHROOT 1
+ruby/config.h:#define HAVE_GETCWD 1
+ruby/config.h:#define HAVE_EACCESS 1
+ruby/config.h:#define HAVE_TRUNCATE 1
+ruby/config.h:#define HAVE_FTRUNCATE 1
+ruby/config.h:#define HAVE_FTELLO 1
+ruby/config.h:#define HAVE_TIMES 1
+ruby/config.h:#define HAVE_UTIMES 1
+ruby/config.h:#define HAVE_UTIMENSAT 1
+ruby/config.h:#define HAVE_FCNTL 1
+ruby/config.h:#define HAVE_LOCKF 1
+ruby/config.h:#define HAVE_LSTAT 1
+ruby/config.h:#define HAVE_TRUNCATE64 1
+ruby/config.h:#define HAVE_FTRUNCATE64 1
+ruby/config.h:#define HAVE_FTELLO64 1
+ruby/config.h:#define HAVE_FSEEKO 1
+ruby/config.h:#define HAVE_FSEEKO64 1
+ruby/config.h:#define HAVE_LINK 1
+ruby/config.h:#define HAVE_SYMLINK 1
+ruby/config.h:#define HAVE_READLINK 1
+ruby/config.h:#define HAVE_READDIR_R 1
+ruby/config.h:#define HAVE_FSYNC 1
+ruby/config.h:#define HAVE_FDATASYNC 1
+ruby/config.h:#define HAVE_FCHOWN 1
+ruby/config.h:#define HAVE_SETITIMER 1
+ruby/config.h:#define HAVE_SETEUID 1
+ruby/config.h:#define HAVE_SETREUID 1
+ruby/config.h:#define HAVE_SETRESUID 1
+ruby/config.h:#define HAVE_SOCKETPAIR 1
+ruby/config.h:#define HAVE_SETEGID 1
+ruby/config.h:#define HAVE_SETREGID 1
+ruby/config.h:#define HAVE_SETRESGID 1
+ruby/config.h:#define HAVE_ISSETUGID 1
+ruby/config.h:#define HAVE_PAUSE 1
+ruby/config.h:#define HAVE_LCHOWN 1
+ruby/config.h:#define HAVE_LCHMOD 1
+ruby/config.h:#define HAVE_GETPGRP 1
+ruby/config.h:#define HAVE_SETPGRP 1
+ruby/config.h:#define HAVE_GETPGID 1
+ruby/config.h:#define HAVE_SETPGID 1
+ruby/config.h:#define HAVE_INITGROUPS 1
+ruby/config.h:#define HAVE_GETGROUPS 1
+ruby/config.h:#define HAVE_SETGROUPS 1
+ruby/config.h:#define HAVE_GETPRIORITY 1
+ruby/config.h:#define HAVE_GETRLIMIT 1
+ruby/config.h:#define HAVE_SETRLIMIT 1
+ruby/config.h:#define HAVE_SYSCONF 1
+ruby/config.h:#define HAVE_CLOSE 1
+ruby/config.h:#define HAVE_DLOPEN 1
+ruby/config.h:#define HAVE_SIGPROCMASK 1
+ruby/config.h:#define HAVE_SIGACTION 1
+ruby/config.h:#define HAVE_SIGSETJMP 1
+ruby/config.h:#define HAVE__SETJMP 1
+ruby/config.h:#define HAVE__LONGJMP 1
+ruby/config.h:#define HAVE_SETSID 1
+ruby/config.h:#define HAVE_TELLDIR 1
+ruby/config.h:#define HAVE_SEEKDIR 1
+ruby/config.h:#define HAVE_FCHMOD 1
+ruby/config.h:#define HAVE_COSH 1
+ruby/config.h:#define HAVE_SINH 1
+ruby/config.h:#define HAVE_TANH 1
+ruby/config.h:#define HAVE_LOG2 1
+ruby/config.h:#define HAVE_ROUND 1
+ruby/config.h:#define HAVE_SETUID 1
+ruby/config.h:#define HAVE_SETGID 1
+ruby/config.h:#define HAVE_SETENV 1
+ruby/config.h:#define HAVE_UNSETENV 1
+ruby/config.h:#define HAVE_MKTIME 1
+ruby/config.h:#define HAVE_TIMEGM 1
+ruby/config.h:#define HAVE_GMTIME_R 1
+ruby/config.h:#define HAVE_CLOCK_GETTIME 1
+ruby/config.h:#define HAVE_GETTIMEOFDAY 1
+ruby/config.h:#define HAVE_PREAD 1
+ruby/config.h:#define HAVE_SENDFILE 1
+ruby/config.h:#define HAVE_SHUTDOWN 1
+ruby/config.h:#define HAVE_SIGALTSTACK 1
+ruby/config.h:#define HAVE_STRUCT_TM_TM_ZONE 1
+ruby/config.h:#define HAVE_TM_ZONE 1
+ruby/config.h:#define HAVE_STRUCT_TM_TM_GMTOFF 1
+ruby/config.h:#define HAVE_DAYLIGHT 1
+ruby/config.h:#define HAVE_VAR_TIMEZONE 1
+ruby/config.h:#define HAVE_TIMEZONE 1
+ruby/config.h:#define HAVE__SC_CLK_TCK 1
+ruby/config.h:#define HAVE_LIBPTHREAD 1
+ruby/config.h:#define HAVE_NANOSLEEP 1
+ruby/config.h:#define HAVE_SCHED_YIELD 1
+ruby/config.h:#define HAVE_PTHREAD_ATTR_SETINHERITSCHED 1
+ruby/config.h:#define HAVE_PTHREAD_GETATTR_NP 1
+ruby/config.h:#define HAVE_PTHREAD_ATTR_GETSTACK 1
+ruby/config.h:#define HAVE_PTHREAD_H 1
+ruby/defines.h:# ifndef  HAVE_PROTOTYPES
+ruby/defines.h:#  define HAVE_PROTOTYPES 1
+ruby/defines.h:# ifndef  HAVE_STDARG_PROTOTYPES
+ruby/defines.h:#  define HAVE_STDARG_PROTOTYPES 1
+ruby/defines.h:#ifdef HAVE_PROTOTYPES
+ruby/defines.h:#ifdef HAVE_STDARG_PROTOTYPES
+ruby/defines.h:# define HAVE_LONG_LONG 1
+ruby/defines.h:# define HAVE_INFINITY
+ruby/defines.h:# define HAVE_NAN
+ruby/defines.h:#elif defined (__SYMBIAN32__) && defined (HAVE_SYS_SELECT_H)
+ruby/intern.h:#ifdef HAVE_STDARG_PROTOTYPES
+ruby/intern.h:#if HAVE_LONG_LONG
+ruby/intern.h:#endif  /* HAVE_LONG_LONG */
+ruby/intern.h:#if defined(NFDBITS) && defined(HAVE_RB_FD_INIT)
+ruby/intern.h:#define HAVE_RB_DEFINE_ALLOC_FUNC 1
+ruby/intern.h:#define HAVE_RB_REG_NEW_STR 1
+ruby/io.h:#if defined(HAVE_STDIO_EXT_H)
+ruby/io.h:#define HAVE_RB_IO_T 1
+ruby/missing.h:#if defined(HAVE_SYS_TIME_H)
+ruby/missing.h:#if defined(HAVE_SYS_TYPES_H)
+ruby/missing.h:#if !defined(HAVE_STRUCT_TIMESPEC)
+ruby/missing.h:#if !defined(HAVE_STRUCT_TIMEZONE)
+ruby/missing.h:#ifndef HAVE_ACOSH
+ruby/missing.h:#ifndef HAVE_CRYPT
+ruby/missing.h:#ifndef HAVE_DUP2
+ruby/missing.h:#ifndef HAVE_EACCESS
+ruby/missing.h:#ifndef HAVE_FINITE
+ruby/missing.h:#ifndef HAVE_FLOCK
+ruby/missing.h:#ifndef HAVE_FREXP
+ruby/missing.h:#ifndef HAVE_HYPOT
+ruby/missing.h:#ifndef HAVE_ERF
+ruby/missing.h:#ifndef HAVE_TGAMMA
+ruby/missing.h:#ifndef HAVE_LGAMMA_R
+ruby/missing.h:#ifndef HAVE_CBRT
+ruby/missing.h:# ifndef HAVE_ISINF
+ruby/missing.h:#  if defined(HAVE_FINITE) && defined(HAVE_ISNAN)
+ruby/missing.h:# ifndef HAVE_ISNAN
+ruby/missing.h:#ifndef HAVE_MEMCMP
+ruby/missing.h:#ifndef HAVE_MEMMOVE
+ruby/missing.h:#ifndef HAVE_MODF
+ruby/missing.h:#ifndef HAVE_STRCHR
+ruby/missing.h:#ifndef HAVE_STRERROR
+ruby/missing.h:#ifndef HAVE_STRSTR
+ruby/missing.h:#ifndef HAVE_STRTOL
+ruby/missing.h:#ifndef HAVE_STRLCPY
+ruby/missing.h:#ifndef HAVE_STRLCAT
+ruby/missing.h:#ifndef HAVE_SIGNBIT
+ruby/missing.h:#ifndef HAVE_FFS
+ruby/oniguruma.h:# ifndef  HAVE_PROTOTYPES
+ruby/oniguruma.h:#  define HAVE_PROTOTYPES 1
+ruby/oniguruma.h:# ifndef  HAVE_STDARG_PROTOTYPES
+ruby/oniguruma.h:#  define HAVE_STDARG_PROTOTYPES 1
+ruby/oniguruma.h:# ifndef  HAVE_STDARG_PROTOTYPES
+ruby/oniguruma.h:#  define HAVE_STDARG_PROTOTYPES 1
+ruby/oniguruma.h:#ifdef HAVE_STDARG_H
+ruby/oniguruma.h:# ifndef  HAVE_STDARG_PROTOTYPES
+ruby/oniguruma.h:#  define HAVE_STDARG_PROTOTYPES 1
+ruby/oniguruma.h:#ifdef HAVE_STDARG_PROTOTYPES
+ruby/ruby.h:#define HAVE_RUBY_DEFINES_H     1
+ruby/ruby.h:#define HAVE_RUBY_ENCODING_H    1
+ruby/ruby.h:#define HAVE_RUBY_INTERN_H      1
+ruby/ruby.h:#define HAVE_RUBY_IO_H          1
+ruby/ruby.h:#define HAVE_RUBY_MISSING_H     1
+ruby/ruby.h:#define HAVE_RUBY_ONIGURUMA_H   1
+ruby/ruby.h:#define HAVE_RUBY_RE_H          1
+ruby/ruby.h:#define HAVE_RUBY_REGEX_H       1
+ruby/ruby.h:#define HAVE_RUBY_RUBY_H        1
+ruby/ruby.h:#define HAVE_RUBY_ST_H          1
+ruby/ruby.h:#define HAVE_RUBY_UTIL_H        1
+ruby/ruby.h:#define HAVE_RUBY_VERSION_H     1
+ruby/ruby.h:#define HAVE_RUBY_VM_H          1
+ruby/ruby.h:#define HAVE_RUBY_WIN32_H       1
+ruby/ruby.h:#ifdef HAVE_STDLIB_H
+ruby/ruby.h:#ifdef HAVE_STRING_H
+ruby/ruby.h:#ifdef HAVE_INTRINSICS_H
+ruby/ruby.h:#ifdef HAVE_STDINT_H
+ruby/ruby.h:#ifdef HAVE_INTTYPES_H
+ruby/ruby.h:#if defined(HAVE_ALLOCA_H)
+ruby/ruby.h:#if defined HAVE_UINTPTR_T && 0
+ruby/ruby.h:#  ifdef HAVE_LIMITS_H
+ruby/ruby.h:#ifdef HAVE_LONG_LONG
+ruby/ruby.h:#ifdef HAVE_LONG_LONG
+ruby/ruby.h:#if SIZEOF_OFF_T > SIZEOF_LONG && defined(HAVE_LONG_LONG)
+ruby/ruby.h:#if SIZEOF_SIZE_T > SIZEOF_LONG && defined(HAVE_LONG_LONG)
+ruby/ruby.h:# if SIZEOF_SIZE_T > SIZEOF_LONG && defined(HAVE_LONG_LONG)
+ruby/ruby.h:# if SIZEOF_SIZE_T > SIZEOF_LONG && defined(HAVE_LONG_LONG)
+ruby/ruby.h:#ifdef HAVE_LONG_LONG
+ruby/ruby.h:#if defined(HAVE_LONG_LONG) && SIZEOF_OFF_T > SIZEOF_LONG
+ruby/ruby.h:#if defined(HAVE_LONG_LONG) && SIZEOF_SIZE_T > SIZEOF_LONG
+ruby/ruby.h:#define HAVE_NATIVETHREAD
+ruby/ruby.h:#define RB_EVENT_HOOKS_HAVE_CALLBACK_DATA 1
+ruby/st.h:#elif defined HAVE_STDLIB_H
+ruby/st.h:#ifdef HAVE_STDINT_H
+ruby/st.h:#ifdef HAVE_INTTYPES_H
+ruby/st.h:# ifdef HAVE_LIMITS_H
+ruby/util.h:# ifndef  HAVE_PROTOTYPES
+ruby/util.h:#  define HAVE_PROTOTYPES 1
+ruby/util.h:# ifndef  HAVE_STDARG_PROTOTYPES
+ruby/util.h:#  define HAVE_STDARG_PROTOTYPES 1
+ruby/util.h:#ifdef HAVE_PROTOTYPES
+ruby/util.h:#ifdef HAVE_STDARG_PROTOTYPES
+ruby/win32.h:#ifdef HAVE_SYS_UTIME_H
+ruby/win32.h:#ifdef HAVE_UNISTD_H
+ruby/win32.h:#undef HAVE_FTRUNCATE
+ruby/win32.h:#define HAVE_FTRUNCATE 1
+ruby/win32.h:#if defined HAVE_FTRUNCATE64
+ruby/win32.h:#undef HAVE_TRUNCATE
+ruby/win32.h:#define HAVE_TRUNCATE 1
+ruby/win32.h:#if defined HAVE_TRUNCATE64
+ruby/win32.h:#undef HAVE_FSEEKO
+ruby/win32.h:#define HAVE_FSEEKO 1
+ruby/win32.h:#if defined HAVE_FSEEKO64
+ruby/win32.h:#undef HAVE_FTELLO
+ruby/win32.h:#define HAVE_FTELLO 1
+ruby/win32.h:#if defined HAVE_FTELLO64
+win32/win32.c:#ifdef HAVE_SYS_PARAM_H
+ext/bigdecimal/bigdecimal.c:#ifdef HAVE_IEEEFP_H
+ext/curses/curses.c:#if defined(HAVE_NCURSES_H)
+ext/curses/curses.c:#elif defined(HAVE_NCURSES_CURSES_H)
+ext/curses/curses.c:#elif defined(HAVE_CURSES_COLR_CURSES_H)
+ext/curses/curses.c:# ifdef HAVE_STDARG_PROTOTYPES
+ext/curses/curses.c:#ifdef HAVE_INIT_COLOR
+ext/curses/curses.c:#ifdef HAVE_ISENDWIN
+ext/curses/curses.c:#ifdef HAVE_ISENDWIN
+ext/curses/curses.c:#ifdef HAVE_ISENDWIN
+ext/curses/curses.c:#ifdef HAVE_DOUPDATE
+ext/curses/curses.c:#ifdef HAVE_BEEP
+ext/curses/curses.c:#ifdef HAVE_FLASH
+ext/curses/curses.c:#ifdef HAVE_UNGETCH
+ext/curses/curses.c:#if defined(HAVE_GETNSTR)
+ext/curses/curses.c:#if defined(HAVE_DELETELN) || defined(deleteln)
+ext/curses/curses.c:#if defined(HAVE_INSERTLN) || defined(insertln)
+ext/curses/curses.c:#ifdef HAVE_KEYNAME
+ext/curses/curses.c:#ifdef HAVE_CURS_SET
+ext/curses/curses.c:#ifdef HAVE_SCRL
+ext/curses/curses.c:#ifdef HAVE_SETSCRREG
+ext/curses/curses.c:#ifdef HAVE_BKGDSET
+ext/curses/curses.c:#ifdef HAVE_BKGD
+ext/curses/curses.c:#if defined(HAVE_USE_DEFAULT_COLORS)
+ext/curses/curses.c:#if defined(HAVE_TABSIZE)
+ext/curses/curses.c:#if defined(HAVE_TABSIZE)
+ext/curses/curses.c:#if defined(HAVE_ESCDELAY)
+ext/curses/curses.c:#if defined(HAVE_ESCDELAY)
+ext/curses/curses.c:#if defined(HAVE_RESIZETERM)
+ext/curses/curses.c:#if defined(HAVE_COLORS)
+ext/curses/curses.c:#if defined(HAVE_COLOR_PAIRS)
+ext/curses/curses.c:#ifdef HAVE_TIMEOUT
+ext/curses/curses.c:#ifdef HAVE_DEF_PROG_MODE
+ext/curses/curses.c:#ifdef HAVE_RESET_PROG_MODE
+ext/curses/curses.c:#ifdef HAVE_DOUPDATE
+ext/curses/curses.c:#if defined(HAVE_WGETNSTR)
+ext/curses/curses.c:#if defined(HAVE_WDELETELN) || defined(wdeleteln)
+ext/curses/curses.c:#if defined(HAVE_WINSERTLN) || defined(winsertln)
+ext/curses/curses.c:#ifdef HAVE_WSETSCRREG
+ext/curses/curses.c:#if defined(USE_COLOR) && defined(HAVE_WCOLOR_SET)
+ext/curses/curses.c:#endif /* defined(USE_COLOR) && defined(HAVE_WCOLOR_SET) */
+ext/curses/curses.c:#ifdef HAVE_WSCRL
+ext/curses/curses.c:#ifdef HAVE_WATTROFF
+ext/curses/curses.c:#ifdef HAVE_WATTRON
+ext/curses/curses.c:#ifdef HAVE_WATTRSET
+ext/curses/curses.c:#ifdef HAVE_WBKGDSET
+ext/curses/curses.c:#ifdef HAVE_WBKGD
+ext/curses/curses.c:#ifdef HAVE_WGETBKGD
+ext/curses/curses.c:#if defined(HAVE_WRESIZE)
+ext/curses/curses.c:#ifdef HAVE_KEYPAD
+ext/curses/curses.c:#ifdef HAVE_NODELAY
+ext/curses/curses.c:#ifdef HAVE_WTIMEOUT
+ext/curses/curses.c:#if defined(USE_COLOR) && defined(HAVE_WCOLOR_SET)
+ext/curses/curses.c:#endif /* USE_COLOR && HAVE_WCOLOR_SET */
+ext/dbm/dbm.c:#ifdef HAVE_CDEFS_H
+ext/dbm/dbm.c:#ifdef HAVE_SYS_CDEFS_H
+ext/dbm/dbm.c:#ifdef HAVE_DBM_CLEARERR
+ext/digest/defs.h:#if defined(HAVE_SYS_CDEFS_H)
+ext/dl/cfunc.c:#if HAVE_LONG_LONG  /* used in ruby.h */
+ext/dl/cfunc.c:#if HAVE_LONG_LONG  /* used in ruby.h */
+ext/dl/dl.c:#if HAVE_LONG_LONG
+ext/dl/dl.c:#if HAVE_LONG_LONG
+ext/dl/dl.c:#if HAVE_LONG_LONG
+ext/dl/dl.h:#if defined(HAVE_DLFCN_H)
+ext/dl/dl.h:#if HAVE_LONG_LONG
+ext/dl/dl.h:#if HAVE_LONG_LONG
+ext/dl/dl.h:#if HAVE_LONG_LONG
+ext/dl/handle.c:#if defined(HAVE_DLERROR)
+ext/dl/handle.c:#if defined(HAVE_DLERROR)
+ext/dl/handle.c:#if defined(HAVE_DLERROR)
+ext/etc/etc.c:#ifdef HAVE_UNISTD_H
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETLOGIN
+ext/etc/etc.c:#if defined(HAVE_GETPWENT) || defined(HAVE_GETGRENT)
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_ST_PW_PASSWD
+ext/etc/etc.c:#ifdef HAVE_ST_PW_GECOS
+ext/etc/etc.c:#ifdef HAVE_ST_PW_CHANGE
+ext/etc/etc.c:#ifdef HAVE_ST_PW_QUOTA
+ext/etc/etc.c:#ifdef HAVE_ST_PW_AGE
+ext/etc/etc.c:#ifdef HAVE_ST_PW_CLASS
+ext/etc/etc.c:#ifdef HAVE_ST_PW_COMMENT
+ext/etc/etc.c:#ifdef HAVE_ST_PW_EXPIRE
+ext/etc/etc.c:#if defined(HAVE_GETPWENT)
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETPWENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_ST_GR_PASSWD
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_ST_PW_GECOS
+ext/etc/etc.c:#ifdef HAVE_ST_PW_CHANGE
+ext/etc/etc.c:#ifdef HAVE_ST_PW_QUOTA
+ext/etc/etc.c:#ifdef HAVE_ST_PW_AGE
+ext/etc/etc.c:#ifdef HAVE_ST_PW_CLASS
+ext/etc/etc.c:#ifdef HAVE_ST_PW_COMMENT
+ext/etc/etc.c:#ifdef HAVE_ST_PW_EXPIRE
+ext/etc/etc.c:#ifdef HAVE_GETGRENT
+ext/etc/etc.c:#ifdef HAVE_ST_GR_PASSWD
+ext/fiddle/closure.c:#if HAVE_LONG_LONG
+ext/fiddle/closure.c:#if HAVE_LONG_LONG
+ext/fiddle/conversions.c:#if HAVE_LONG_LONG
+ext/fiddle/conversions.c:#if HAVE_LONG_LONG
+ext/fiddle/conversions.c:#if HAVE_LONG_LONG
+ext/fiddle/conversions.h:#if HAVE_LONG_LONG
+ext/fiddle/fiddle.c:#if HAVE_LONG_LONG
+ext/fiddle/fiddle.h:#ifdef HAVE_SYS_MMAN_H
+ext/fiddle/fiddle.h:#if HAVE_LONG_LONG
+ext/iconv/iconv.c:#ifdef HAVE_ICONVLIST
+ext/iconv/iconv.c:#if defined(HAVE_ICONVLIST) || defined(HAVE___ICONV_FREE_LIST)
+ext/iconv/iconv.c:#ifdef HAVE_ICONVLIST
+ext/iconv/iconv.c:#elif defined(HAVE___ICONV_FREE_LIST)
+ext/openssl/openssl_missing.c:#if defined(HAVE_OPENSSL_ENGINE_H) && defined(HAVE_ST_ENGINE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_HMAC_CTX_COPY)
+ext/openssl/openssl_missing.c:#endif /* HAVE_HMAC_CTX_COPY */
+ext/openssl/openssl_missing.c:#if !defined(HAVE_X509_STORE_SET_EX_DATA)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_X509_STORE_GET_EX_DATA)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_EVP_MD_CTX_CREATE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_EVP_MD_CTX_CLEANUP)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_EVP_MD_CTX_DESTROY)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_EVP_MD_CTX_INIT)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_HMAC_CTX_INIT)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_HMAC_CTX_CLEANUP)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_EVP_CIPHER_CTX_COPY)
+ext/openssl/openssl_missing.c:#if defined(HAVE_ENGINE_ADD) && defined(HAVE_ST_ENGINE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_X509_CRL_SET_VERSION)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_X509_CRL_SET_ISSUER_NAME)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_X509_CRL_SORT)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_X509_CRL_ADD0_REVOKED)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_MOD_SQR)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_MOD_ADD) || !defined(HAVE_BN_MOD_SUB)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_MOD_ADD)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_MOD_SUB)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_RAND_RANGE) || !defined(HAVE_BN_PSEUDO_RAND_RANGE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_RAND_RANGE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_BN_PSEUDO_RAND_RANGE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_CONF_GET1_DEFAULT_CONFIG_FILE)
+ext/openssl/openssl_missing.c:#if !defined(HAVE_PEM_DEF_CALLBACK)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_HMAC_CTX_INIT)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_HMAC_CTX_COPY)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_HMAC_CTX_CLEANUP)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_MD_CTX_CREATE)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_MD_CTX_INIT)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_MD_CTX_CLEANUP)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_MD_CTX_DESTROY)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_CIPHER_CTX_COPY)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_DIGESTINIT_EX)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_DIGESTFINAL_EX)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_CIPHERINIT_EX)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_CIPHERFINAL_EX)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_EVP_HMAC_INIT_EX)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_OPENSSL_CLEANSE)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_X509_STORE_GET_EX_DATA)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_X509_STORE_SET_EX_DATA)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_X509_CRL_SET_VERSION)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_X509_CRL_SET_ISSUER_NAME)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_X509_CRL_SORT)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_X509_CRL_ADD0_REVOKED)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_BN_MOD_SQR)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_BN_MOD_ADD)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_BN_MOD_SUB)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_BN_RAND_RANGE)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_BN_PSEUDO_RAND_RANGE)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_CONF_GET1_DEFAULT_CONFIG_FILE)
+ext/openssl/openssl_missing.h:#if !defined(HAVE_PEM_DEF_CALLBACK)
+ext/openssl/ossl.c:#ifdef HAVE_ERR_PEEK_LAST_ERROR
+ext/openssl/ossl.c:#if !defined(HAVE_VA_ARGS_MACRO)
+ext/openssl/ossl.h:#ifdef HAVE_ASSERT_H
+ext/openssl/ossl.h:#if defined(HAVE_OPENSSL_ENGINE_H) && defined(HAVE_ST_ENGINE)
+ext/openssl/ossl.h:#if defined(HAVE_OPENSSL_OCSP_H)
+ext/openssl/ossl.h:#if defined(HAVE_VA_ARGS_MACRO)
+ext/openssl/ossl_asn1.c:#if defined(HAVE_SYS_TIME_H)
+ext/openssl/ossl_bio.c:#ifdef HAVE_UNISTD_H
+ext/openssl/ossl_cipher.c:#ifdef HAVE_OBJ_NAME_DO_ALL_SORTED
+ext/openssl/ossl_cipher.c:#ifdef HAVE_OBJ_NAME_DO_ALL_SORTED
+ext/openssl/ossl_cipher.c:#if defined(HAVE_EVP_CIPHER_CTX_SET_PADDING)
+ext/openssl/ossl_engine.c:#if !defined(HAVE_ENGINE_LOAD_BUILTIN_ENGINES)
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_DYNAMIC
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_CSWIFT
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_CHIL
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_ATALLA
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_NURON
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_UBSEC
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_AEP
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_SUREWARE
+ext/openssl/ossl_engine.c:#if HAVE_ENGINE_LOAD_4758CCA
+ext/openssl/ossl_engine.c:#ifdef HAVE_ENGINE_LOAD_OPENBSD_DEV_CRYPTO
+ext/openssl/ossl_engine.c:#endif /* HAVE_ENGINE_LOAD_BUILTIN_ENGINES */
+ext/openssl/ossl_engine.c:#if defined(HAVE_ENGINE_CLEANUP)
+ext/openssl/ossl_engine.c:#if defined(HAVE_ENGINE_GET_CIPHER)
+ext/openssl/ossl_engine.c:#if defined(HAVE_ENGINE_GET_DIGEST)
+ext/openssl/ossl_pkcs5.c:#ifdef HAVE_PKCS5_PBKDF2_HMAC
+ext/openssl/ossl_pkcs5.c:#ifdef HAVE_PKCS5_PBKDF2_HMAC_SHA1
+ext/openssl/ossl_ssl.c:#if defined(HAVE_UNISTD_H)
+ext/openssl/ossl_ssl.c:#ifdef HAVE_SSL_SET_TLSEXT_HOST_NAME
+ext/openssl/ossl_ssl.c:#ifdef HAVE_SSL_SET_TLSEXT_HOST_NAME
+ext/openssl/ossl_ssl.c:#if defined(HAVE_SSLV2_METHOD) && defined(HAVE_SSLV2_SERVER_METHOD) && \
+ext/openssl/ossl_ssl.c:        defined(HAVE_SSLV2_CLIENT_METHOD)	
+ext/openssl/ossl_ssl.c:#ifdef HAVE_SSL_SET_TLSEXT_HOST_NAME
+ext/openssl/ossl_ssl.c:#ifdef HAVE_SSL_SET_TLSEXT_HOST_NAME
+ext/openssl/ossl_ssl.c:#ifdef HAVE_SSL_SET_TLSEXT_HOST_NAME
+ext/openssl/ossl_ssl.c:#ifdef HAVE_SSL_SET_TLSEXT_HOST_NAME
+ext/openssl/ossl_ssl_session.c:#if HAVE_SSL_SESSION_CMP == 0
+ext/openssl/ossl_ssl_session.c:#ifdef HAVE_SSL_SESSION_GET_ID
+ext/openssl/ossl_ssl_session.c:#ifdef HAVE_SSL_SESSION_GET_ID
+ext/openssl/ossl_x509attr.c:#if defined(HAVE_ST_X509_ATTRIBUTE_SINGLE) || defined(HAVE_ST_SINGLE)
+ext/openssl/ossl_x509ext.c:#ifdef HAVE_X509V3_SET_NCONF
+ext/openssl/ossl_x509ext.c:#ifdef HAVE_X509V3_EXT_NCONF_NID
+ext/openssl/ossl_x509ext.c:#ifdef HAVE_X509V3_EXT_NCONF_NID
+ext/openssl/ruby_missing.h:#ifndef HAVE_RB_IO_T
+ext/openssl/ruby_missing.h:#ifndef HAVE_RB_STR_SET_LEN
+ext/openssl/ruby_missing.h:#endif /* ! HAVE_RB_STR_SET_LEN */
+ext/openssl/ruby_missing.h:#ifndef HAVE_RB_BLOCK_CALL
+ext/openssl/ruby_missing.h:#endif /* ! HAVE_RB_BLOCK_CALL */
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/parser.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/psych.h:#ifdef HAVE_RUBY_ENCODING_H
+ext/psych/to_ruby.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/pty/pty.c:#ifdef HAVE_SYS_IOCTL_H
+ext/pty/pty.c:#ifdef HAVE_LIBUTIL_H
+ext/pty/pty.c:#ifdef HAVE_UTIL_H
+ext/pty/pty.c:#ifdef HAVE_PTY_H
+ext/pty/pty.c:#ifdef HAVE_SYS_WAIT_H
+ext/pty/pty.c:#ifdef HAVE_SYS_STROPTS_H
+ext/pty/pty.c:#ifdef HAVE_UNISTD_H
+ext/pty/pty.c:#if !defined(HAVE_OPENPTY)
+ext/pty/pty.c:#elif !defined(HAVE_PTSNAME)
+ext/pty/pty.c:#endif /* !defined(HAVE_OPENPTY) */
+ext/pty/pty.c:#ifndef HAVE_SETEUID
+ext/pty/pty.c:# ifdef HAVE_SETREUID
+ext/pty/pty.c:# else /* NOT HAVE_SETREUID */
+ext/pty/pty.c:#  ifdef HAVE_SETRESUID
+ext/pty/pty.c:#  else /* NOT HAVE_SETRESUID */
+ext/pty/pty.c:#  endif /* HAVE_SETRESUID */
+ext/pty/pty.c:# endif /* HAVE_SETREUID */
+ext/pty/pty.c:#ifdef HAVE_SETSID
+ext/pty/pty.c:# ifdef HAVE_SETPGRP
+ext/pty/pty.c:# endif /* HAVE_SETPGRP */
+ext/pty/pty.c:#if defined(HAVE_SETEUID) || defined(HAVE_SETREUID) || defined(HAVE_SETRESUID)
+ext/pty/pty.c:#if defined(HAVE_POSIX_OPENPT)
+ext/pty/pty.c:#elif defined HAVE_OPENPTY
+ext/pty/pty.c:#elif defined HAVE__GETPTY
+ext/pty/pty.c:#elif defined(HAVE_PTSNAME)
+ext/readline/readline.c:#ifdef HAVE_READLINE_READLINE_H
+ext/readline/readline.c:#ifdef HAVE_READLINE_HISTORY_H
+ext/readline/readline.c:#ifdef HAVE_EDITLINE_READLINE_H
+ext/readline/readline.c:#ifdef HAVE_UNISTD_H
+ext/readline/readline.c:# if !defined(HAVE_EDITLINE_READLINE_H) && defined(HAVE_RL_PROMPT_START_IGNORE) && defined(HAVE_RL_PROMPT_END_IGNORE)
+ext/readline/readline.c:#ifndef HAVE_RL_FILENAME_COMPLETION_FUNCTION
+ext/readline/readline.c:#ifndef HAVE_RL_USERNAME_COMPLETION_FUNCTION
+ext/readline/readline.c:#ifndef HAVE_RL_COMPLETION_MATCHES
+ext/readline/readline.c:#if defined HAVE_RL_GETC_FUNCTION
+ext/readline/readline.c:#elif defined HAVE_RL_EVENT_HOOK
+ext/readline/readline.c:#if defined HAVE_RL_CLEANUP_AFTER_SIGNAL
+ext/readline/readline.c:#elif defined HAVE_RL_DEPREP_TERM_FUNCTION
+ext/readline/readline.c:#ifdef HAVE_RL_GETC_FUNCTION
+ext/readline/readline.c:#ifdef HAVE_RL_LINE_BUFFER
+ext/readline/readline.c:#ifdef HAVE_RL_POINT
+ext/readline/readline.c:#ifdef HAVE_RL_ATTEMPTED_COMPLETION_OVER
+ext/readline/readline.c:#ifdef HAVE_RL_SET_SCREEN_SIZE
+ext/readline/readline.c:#ifdef HAVE_RL_GET_SCREEN_SIZE
+ext/readline/readline.c:#ifdef HAVE_RL_VI_EDITING_MODE
+ext/readline/readline.c:#ifdef HAVE_RL_EDITING_MODE
+ext/readline/readline.c:#ifdef HAVE_RL_EMACS_EDITING_MODE
+ext/readline/readline.c:#ifdef  HAVE_RL_EDITING_MODE
+ext/readline/readline.c:#ifdef HAVE_RL_COMPLETION_APPEND_CHARACTER
+ext/readline/readline.c:#ifdef HAVE_RL_COMPLETION_APPEND_CHARACTER
+ext/readline/readline.c:#ifdef HAVE_RL_BASIC_WORD_BREAK_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_BASIC_WORD_BREAK_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_COMPLETER_WORD_BREAK_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_COMPLETER_WORD_BREAK_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_BASIC_QUOTE_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_BASIC_QUOTE_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_COMPLETER_QUOTE_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_COMPLETER_QUOTE_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_FILENAME_QUOTE_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_FILENAME_QUOTE_CHARACTERS
+ext/readline/readline.c:#ifdef HAVE_RL_REFRESH_LINE
+ext/readline/readline.c:#ifdef HAVE_REPLACE_HISTORY_ENTRY
+ext/readline/readline.c:#ifdef HAVE_REMOVE_HISTORY
+ext/readline/readline.c:#ifdef HAVE_CLEAR_HISTORY
+ext/readline/readline.c:#if defined HAVE_RL_LIBRARY_VERSION
+ext/readline/readline.c:#if defined HAVE_CLEAR_HISTORY || defined HAVE_REMOVE_HISTORY
+ext/readline/readline.c:#if !defined HAVE_CLEAR_HISTORY
+ext/readline/readline.c:#if defined HAVE_RL_GETC_FUNCTION
+ext/readline/readline.c:#elif defined HAVE_RL_EVENT_HOOK
+ext/readline/readline.c:#ifdef HAVE_RL_CATCH_SIGNALS
+ext/readline/readline.c:#ifdef HAVE_RL_CATCH_SIGWINCH
+ext/readline/readline.c:#ifdef HAVE_RL_CLEAR_SIGNALS
+ext/sdbm/_sdbm.c:#ifdef HAVE_UNISTD_H
+ext/sdbm/init.c:#ifdef HAVE_DBM_CLAERERR
+ext/socket/addrinfo.h:# ifdef HAVE_PROTOTYPES
+ext/socket/addrinfo.h:#ifndef HAVE_TYPE_STRUCT_ADDRINFO
+ext/socket/addrinfo.h:#ifndef HAVE_GETADDRINFO
+ext/socket/addrinfo.h:#ifndef HAVE_GETNAMEINFO
+ext/socket/addrinfo.h:#ifndef HAVE_FREEHOSTENT
+ext/socket/addrinfo.h:#ifndef HAVE_FREEADDRINFO
+ext/socket/addrinfo.h:#ifndef HAVE_PADDRINFO
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(IPPROTO_IP) && defined(IP_PKTINFO) && defined(HAVE_STRUCT_IN_PKTINFO_IPI_SPEC_DST) /* GNU/Linux */
+ext/socket/ancdata.c:#if defined(IPPROTO_IP) && defined(IP_PKTINFO) && defined(HAVE_STRUCT_IN_PKTINFO_IPI_SPEC_DST) /* GNU/Linux */
+ext/socket/ancdata.c:#if defined(HAVE_TYPE_STRUCT_CMSGCRED) /* FreeBSD */
+ext/socket/ancdata.c:#if defined(HAVE_TYPE_STRUCT_SOCKCRED) /* FreeBSD, NetBSD */
+ext/socket/ancdata.c:#if defined(IPPROTO_IP) && defined(IP_PKTINFO) && defined(HAVE_STRUCT_IN_PKTINFO_IPI_SPEC_DST) /* GNU/Linux */
+ext/socket/ancdata.c:#if defined(IPPROTO_IPV6) && defined(IPV6_PKTINFO) && defined(HAVE_TYPE_STRUCT_IN6_PKTINFO) /* IPv6 RFC3542 */
+ext/socket/ancdata.c:#            if defined(IP_PKTINFO) && defined(HAVE_STRUCT_IN_PKTINFO_IPI_SPEC_DST) /* GNU/Linux */
+ext/socket/ancdata.c:#if defined(HAVE_SENDMSG)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_SENDMSG)
+ext/socket/ancdata.c:#if defined(HAVE_SENDMSG)
+ext/socket/ancdata.c:#if defined(HAVE_RECVMSG)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if !defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/ancdata.c:#if defined(HAVE_RECVMSG)
+ext/socket/ancdata.c:#if defined(HAVE_RECVMSG)
+ext/socket/ancdata.c:#if defined(HAVE_ST_MSG_CONTROL)
+ext/socket/basicsocket.c:#if defined(HAVE_GETPEEREID) || defined(SO_PEERCRED) || defined(HAVE_GETPEERUCRED)
+ext/socket/basicsocket.c:#if defined(HAVE_GETPEEREID)
+ext/socket/basicsocket.c:#elif defined(HAVE_GETPEERUCRED) /* Solaris */
+ext/socket/getaddrinfo.c:#if defined(HAVE_ARPA_INET_H)
+ext/socket/getaddrinfo.c:#if defined(HAVE_ARPA_NAMESER_H)
+ext/socket/getaddrinfo.c:#if defined(HAVE_RESOLV_H)
+ext/socket/getaddrinfo.c:#ifndef HAVE_GAI_STRERROR
+ext/socket/getaddrinfo.c:#ifndef HAVE_INET_PTON
+ext/socket/getaddrinfo.c:#ifdef HAVE_INET_ATON
+ext/socket/getnameinfo.c:#if defined(HAVE_ARPA_INET_H)
+ext/socket/getnameinfo.c:#if defined(HAVE_ARPA_NAMESER_H)
+ext/socket/getnameinfo.c:#if defined(HAVE_RESOLV_H)
+ext/socket/getnameinfo.c:#define HAVE_INET_NTOP
+ext/socket/getnameinfo.c:#ifndef HAVE_INET_NTOP
+ext/socket/getnameinfo.c:#ifdef HAVE_INET_NTOA
+ext/socket/getnameinfo.c:#if defined(HAVE_GETSERVBYPORT)
+ext/socket/getnameinfo.c:#ifdef HAVE_ADDR8
+ext/socket/init.c:#ifdef HAVE_SYS_UN_H
+ext/socket/init.c:#ifdef HAVE_RB_FD_INIT
+ext/socket/init.c:#ifdef HAVE_RB_FD_INIT
+ext/socket/option.c:#ifdef HAVE_SYS_UN_H
+ext/socket/option.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/raddrinfo.c:#ifdef HAVE_SYS_UN_H
+ext/socket/rubysocket.h:#ifdef HAVE_UNISTD_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_UIO_H
+ext/socket/rubysocket.h:#ifdef HAVE_XTI_H
+ext/socket/rubysocket.h:#ifdef HAVE_NETINET_IN_SYSTM_H
+ext/socket/rubysocket.h:#ifdef HAVE_NETINET_TCP_H
+ext/socket/rubysocket.h:#ifdef HAVE_NETINET_UDP_H
+ext/socket/rubysocket.h:#ifdef HAVE_ARPA_INET_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_UN_H
+ext/socket/rubysocket.h:#if defined(HAVE_FCNTL)
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_SELECT_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_TYPES_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_TIME_H
+ext/socket/rubysocket.h:#ifdef HAVE_FCNTL_H
+ext/socket/rubysocket.h:#ifdef HAVE_IFADDRS_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_IOCTL_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_SOCKIO_H
+ext/socket/rubysocket.h:#ifdef HAVE_NET_IF_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_PARAM_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_UCRED_H
+ext/socket/rubysocket.h:#ifdef HAVE_UCRED_H
+ext/socket/rubysocket.h:#ifndef HAVE_GETADDRINFO
+ext/socket/rubysocket.h:#ifndef HAVE_SOCKADDR_STORAGE
+ext/socket/rubysocket.h:#ifdef HAVE_SA_LEN
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_UN_H
+ext/socket/rubysocket.h:#ifdef HAVE_SYS_UN_H
+ext/socket/rubysocket.h:#if defined(HAVE_SENDMSG)
+ext/socket/rubysocket.h:#if defined(HAVE_RECVMSG)
+ext/socket/rubysocket.h:#ifdef HAVE_ST_MSG_CONTROL
+ext/socket/socket.c:#if defined HAVE_SOCKETPAIR
+ext/socket/socket.c:#if defined HAVE_SOCKETPAIR
+ext/socket/socket.c:#ifdef HAVE_GETHOSTNAME
+ext/socket/socket.c:#ifdef HAVE_UNAME
+ext/socket/socket.c:#ifdef HAVE_HSTRERROR
+ext/socket/socket.c:#ifdef HAVE_SYS_UN_H
+ext/socket/socket.c:#if defined(HAVE_GETIFADDRS) || defined(SIOCGLIFCONF) || defined(SIOCGIFCONF) || defined(_WIN32)
+ext/socket/socket.c:#ifdef HAVE_SYS_UN_H
+ext/socket/socket.c:#if defined(HAVE_GETIFADDRS) || (defined(SIOCGLIFCONF) && defined(SIOCGLIFNUM) && !defined(__hpux)) || defined(SIOCGIFCONF) ||  defined(_WIN32)
+ext/socket/socket.c:#if defined(HAVE_GETIFADDRS)
+ext/socket/socket.c:#ifdef HAVE_SA_LEN
+ext/socket/socket.c:#ifdef HAVE_SYS_UN_H
+ext/socket/sockport.h:# ifdef HAVE_SA_LEN
+ext/socket/sockport.h:#ifdef HAVE_SA_LEN
+ext/socket/sockport.h:#ifdef HAVE_SIN_LEN
+ext/socket/unixserver.c:#ifdef HAVE_SYS_UN_H
+ext/socket/unixserver.c:#ifdef HAVE_SYS_UN_H
+ext/socket/unixsocket.c:#ifdef HAVE_SYS_UN_H
+ext/socket/unixsocket.c:#if defined(HAVE_ST_MSG_CONTROL) && defined(SCM_RIGHTS)
+ext/socket/unixsocket.c:#if defined(HAVE_ST_MSG_ACCRIGHTS)
+ext/socket/unixsocket.c:#if defined(HAVE_SENDMSG) && (FD_PASSING_BY_MSG_CONTROL || FD_PASSING_BY_MSG_ACCRIGHTS)
+ext/socket/unixsocket.c:#if defined(HAVE_RECVMSG) && (FD_PASSING_BY_MSG_CONTROL || FD_PASSING_BY_MSG_ACCRIGHTS)
+ext/socket/unixsocket.c:#ifdef HAVE_SYS_UN_H
+ext/stringio/stringio.c:#if defined(HAVE_FCNTL_H) || defined(_WIN32)
+ext/stringio/stringio.c:#elif defined(HAVE_SYS_FCNTL_H)
+ext/syck/syck.h:#if defined(HAVE_ALLOCA_H) && !defined(__GNUC__)
+ext/tk/stubs.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/stubs.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/stubs.c:#  ifdef HAVE_RUBY_RUBY_H
+ext/tk/stubs.c:#elif defined HAVE_DLOPEN
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/stubs.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#if defined(HAVE_RB_PROC_NEW) && !defined(RUBY_VM)
+ext/tk/tcltklib.c:#ifdef HAVE_STDARG_PROTOTYPES
+ext/tk/tcltklib.c:#ifndef HAVE_RUBY_NATIVE_THREAD_P
+ext/tk/tcltklib.c:#ifndef HAVE_RB_ERRINFO
+ext/tk/tcltklib.c:#ifndef HAVE_RB_SAFE_LEVEL
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifndef HAVE_RB_HASH_LOOKUP
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_STDARG_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifndef HAVE_STRUCT_RARRAY_LEN
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_PROTOTYPES
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#else /* ! HAVE_RUBY_ENCODING_H */
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_RB_SET_SAFE_LEVEL_FORCE
+ext/tk/tcltklib.c:#else /* ! HAVE_RUBY_ENCODING_H */
+ext/tk/tcltklib.c:#ifdef HAVE_RUBY_ENCODING_H
+ext/tk/tcltklib.c:#ifdef HAVE_NATIVETHREAD
+ext/win32ole/win32ole.c:#if defined(HAVE_TYPE_IMULTILANGUAGE2) || defined(HAVE_TYPE_IMULTILANGUAGE)
+ext/win32ole/win32ole.c:#ifdef HAVE_STDARG_PROTOTYPES
+ext/win32ole/win32ole.c:#ifdef HAVE_LONG_LONG
+ext/win32ole/win32ole.c:#if defined(HAVE_TYPE_IMULTILANGUAGE2)
+ext/win32ole/win32ole.c:#elif defined(HAVE_TYPE_IMULTILANGUAGE)
+ext/win32ole/win32ole.c:#if defined(HAVE_TYPE_IMULTILANGUAGE2)
+ext/win32ole/win32ole.c:#elif defined(HAVE_TYPE_IMULTILANGUAGE)
+ext/zlib/zlib.c:#ifdef HAVE_VALGRIND_MEMCHECK_H
+ext/zlib/zlib.c:#ifdef HAVE_ADLER32_COMBINE
+ext/zlib/zlib.c:#ifdef HAVE_CRC32_COMBINE

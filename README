@@ -1,0 +1,6 @@
+# en.UTF-8
+
+Ruby "fork" to use within tapir fork (coming soon).
+The original piece is the latest 1.9.2 (p330), can be found in https://cache.ruby-lang.org/pub/ruby/ .
+
+Besides the same as the 181 stuff, there was some tweaking inside headers (check 0DONE). It works the same, as far as I can tell, keep in mind this is just to run RGSS, not to work on ruby language or something like that...

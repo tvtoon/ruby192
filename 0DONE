@@ -1,0 +1,5 @@
+# en.UTF-8
+
+Every header was stuck inside "include/ruby" (should be installed in "ruby" directory), not only that: there was a "include/ruby.h" that is a useless wrapper for "include/ruby/ruby.h", also some files inside "include/backward" had the same name as the ones in "include" just to include them (BACKWARD???).
+
+The "version.h" from root got yanked inside "version.c".
