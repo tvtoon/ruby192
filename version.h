@@ -23,6 +23,18 @@
 #ifndef RUBY_VERSION_H
 #define RUBY_VERSION_H 1
 
+/* Begin Old header */
+#define RUBY_VERSION "1.9.2"
+#define RUBY_PATCHLEVEL 330
+#define RUBY_VERSION_MAJOR 1
+#define RUBY_VERSION_MINOR 9
+#define RUBY_VERSION_TEENY 1
+
+#define RUBY_RELEASE_YEAR 2014
+#define RUBY_RELEASE_MONTH 8
+#define RUBY_RELEASE_DAY 7
+#define RUBY_RELEASE_DATE "2014-08-07"
+
 /* The origin. */
 #define RUBY_AUTHOR "Yukihiro Matsumoto"
 #define RUBY_BIRTH_YEAR 1993

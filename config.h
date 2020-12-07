@@ -147,7 +147,7 @@
 #define HAVE_GETPRIORITY 1
 #define HAVE_GRP_H 1
 #define HAVE_INITGROUPS 1
-#define HAVE_ISSETUGID 1
+/*#define HAVE_ISSETUGID 1*/
 #define HAVE_SETEGID 1
 #define HAVE_SETGID 1
 #define HAVE_SETGROUPS 1

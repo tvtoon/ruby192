@@ -26,8 +26,8 @@ SRC += file.c gc.c hash.c inits.c io.c iseq.c load.c marshal.c math.c
 SRC += miniprelude.c newline.c node.c numeric.c object.c pack.c parse.c
 SRC += process.c proc.c random.c range.c rational.c re.c regcomp.c regenc.c
 SRC += regerror.c regexec.c regparse.c regsyntax.c ruby.c safe.c signal.c
-SRC += sprintf.c st.c strftime.c string.c struct.c thread.c time.c transcode.c
-SRC += util.c variable.c version.c vm.c vm_dump.c
+SRC += sprintf.c st.c strftime.c string.c strlcat.c strlcpy.c struct.c
+SRC += thread.c time.c transcode.c util.c variable.c version.c vm.c vm_dump.c
 
 SRC += enc/ascii.c enc/us_ascii.c enc/unicode.c enc/utf_8.c
 # Only the encoding and module needed for tapir...
